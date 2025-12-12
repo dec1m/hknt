@@ -3,10 +3,13 @@ package md.maib.customer.ai.promotion.services;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
+import md.maib.customer.ai.promotion.model.Action;
 import md.maib.customer.ai.promotion.model.Response;
 import md.maib.customer.ai.promotion.model.Subject;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;
+
+import static java.util.Optional.ofNullable;
 
 
 @Service
@@ -34,6 +37,8 @@ public class DefaultGenerationPromoService implements GenerationPromoService {
 
         var result = objectMapper.readValue(suggestions, Response.class);
         result.setDetails(customerProfile);
+        ofNullable(theme)
+                .ifPresent(t -> result.setAction(Action.of(theme)));
         return result;
     }
 }

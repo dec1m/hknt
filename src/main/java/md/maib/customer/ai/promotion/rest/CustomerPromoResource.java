@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
+import java.util.Optional;
+
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
@@ -19,7 +21,7 @@ public class CustomerPromoResource {
     private final GenerationPromoService generationPromoService;
     @SneakyThrows
     @GetMapping(path = "/customer/intel/", produces = APPLICATION_JSON_VALUE)
-    Response find(@RequestParam String customerId, @RequestParam Subject theme) {
-        return generationPromoService.generate(customerId, theme);
+    Response find(@RequestParam String customerId, @RequestParam Optional<Subject> theme) {
+        return generationPromoService.generate(customerId, theme.orElse(null));
     }
 }
