@@ -3,4 +3,4 @@ spring:
     name: customer-ai-promotion
   ai:
     openai:
-      api-key: sk-proj-0YqQG_quRyxmJlDfFBP1FMEH_m7Nb0YNYNayb_
+      api-key: ${TOKEN_AI}
