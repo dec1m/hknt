@@ -77,11 +77,11 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
 
         lilianTiger.setFacts(Arrays.asList(lilianTigerFact1, lilianTigerFact2, lilianTigerFact3, lilianTigerFact4, lilianTigerFact5, lilianTigerFact6));
 
-        Customer viraliiTiger = new Customer();
+        Customer vitaliiTiger = new Customer();
 
-        viraliiTiger.setCreatioId("Vitalii V");
-        viraliiTiger.setAge(27);
-        viraliiTiger.setSegment("Mass");
+        vitaliiTiger.setCreatioId("Vitalii V");
+        vitaliiTiger.setAge(27);
+        vitaliiTiger.setSegment("Mass");
 
         Customer.Fact viraliiTigerFact1 = new Customer.Fact();
         viraliiTigerFact1.setName("married");
@@ -107,7 +107,10 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         viraliiTigerFact6.setName("is employee");
         viraliiTigerFact6.setIcon("👔");
 
-        viraliiTiger.setFacts(Arrays.asList(viraliiTigerFact1, viraliiTigerFact2, viraliiTigerFact3, viraliiTigerFact4, viraliiTigerFact5, viraliiTigerFact6));
+     Customer.Fact vitaliiTigerFact7 = new Customer.Fact();
+        vitaliiTigerFact7.setName("has many transactions outside of the country");
+        vitaliiTigerFact7.setIcon("💳");
+        vitaliiTiger.setFacts(Arrays.asList(viraliiTigerFact1, viraliiTigerFact2,vitaliiTigerFact7, viraliiTigerFact3, viraliiTigerFact4, viraliiTigerFact5, viraliiTigerFact6));
 
 
         Customer viktorRazhev = new Customer();
@@ -129,7 +132,7 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         vrFact3.setIcon("💰");
 
         Customer.Fact vrFact4 = new Customer.Fact();
-        vrFact4.setName("has Credits");
+        vrFact4.setName("Has monthly transactions more than 20000 lei");
         vrFact4.setIcon("💵");
 
         Customer.Fact vrFact5 = new Customer.Fact();
@@ -172,8 +175,8 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         asFact4.setIcon("🧒");
 
         Customer.Fact asFact5 = new Customer.Fact();
-        asFact5.setName("has vehicle");
-        asFact5.setIcon("🚗");
+        asFact5.setName("Bigger Cashback");
+        asFact5.setIcon("💳");
 
         Customer.Fact asFact6 = new Customer.Fact();
         asFact6.setName("maibank installed");
@@ -211,7 +214,7 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         macarFact4.setIcon("🚗");
 
         Customer.Fact macarFact5 = new Customer.Fact();
-        macarFact5.setName("maibank installed");
+        macarFact5.setName("15% reducere la călătoriile cu Letz Taxi");
         macarFact5.setIcon("📱");
 
         macar.setFacts(Arrays.asList(
@@ -246,7 +249,7 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         svetlanaFact4.setIcon("🚗");
 
         Customer.Fact svetlanaFact5 = new Customer.Fact();
-        svetlanaFact5.setName("maibank installed");
+        svetlanaFact5.setName("has netflix subscription");
         svetlanaFact5.setIcon("📱");
 
         svetlana.setFacts(Arrays.asList(
@@ -272,7 +275,7 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         doinaFact2.setIcon("💰");
 
         Customer.Fact doinaFact3 = new Customer.Fact();
-        doinaFact3.setName("has child");
+        doinaFact3.setName("Has monthly transactions more than 20000 lei");
         doinaFact3.setIcon("🧒");
 
         Customer.Fact doinaFact4 = new Customer.Fact();
@@ -298,8 +301,8 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         marcel.setSegment("Premium");
 
         Customer.Fact marcelFact1 = new Customer.Fact();
-        marcelFact1.setName("married");
-        marcelFact1.setIcon("🤵🏻👰🏻");
+        marcelFact1.setName("has netflix subscription");
+        marcelFact1.setIcon("📱");
 
         Customer.Fact marcelFact2 = new Customer.Fact();
         marcelFact2.setName("has deposits");
@@ -309,20 +312,11 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         marcelFact3.setName("has child");
         marcelFact3.setIcon("🧒");
 
-        Customer.Fact marcelFact4 = new Customer.Fact();
-        marcelFact4.setName("has vehicle");
-        marcelFact4.setIcon("🚗");
-
-        Customer.Fact marcelFact5 = new Customer.Fact();
-        marcelFact5.setName("maibank installed");
-        marcelFact5.setIcon("📱");
 
         marcel.setFacts(Arrays.asList(
                 marcelFact1,
                 marcelFact2,
-                marcelFact3,
-                marcelFact4,
-                marcelFact5
+                marcelFact3
         ));
 
         Customer andrii = new Customer();
@@ -335,28 +329,20 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         andriiFact1.setName("married");
         andriiFact1.setIcon("🤵🏻👰🏻");
 
-        Customer.Fact andriiFact2 = new Customer.Fact();
-        andriiFact2.setName("has deposits");
-        andriiFact2.setIcon("💰");
-
         Customer.Fact andriiFact3 = new Customer.Fact();
         andriiFact3.setName("has child");
         andriiFact3.setIcon("🧒");
 
-        Customer.Fact andriiFact4 = new Customer.Fact();
-        andriiFact4.setName("has vehicle");
-        andriiFact4.setIcon("🚗");
+        Customer.Fact andriiFact2 = new Customer.Fact();
+        andriiFact2.setName("Not Alto client");
+        andriiFact2.setIcon("🧒");
 
-        Customer.Fact andriiFact5 = new Customer.Fact();
-        andriiFact5.setName("maibank installed");
-        andriiFact5.setIcon("📱");
+
 
         andrii.setFacts(Arrays.asList(
                 andriiFact1,
                 andriiFact2,
-                andriiFact3,
-                andriiFact4,
-                andriiFact5
+                andriiFact3
         ));
 
         Customer alexandru = new Customer();
@@ -370,12 +356,8 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         alexandruFact1.setIcon("🤵🏻👰🏻");
 
         Customer.Fact alexandruFact2 = new Customer.Fact();
-        alexandruFact2.setName("has deposits");
+        alexandruFact2.setName("has salary at maib");
         alexandruFact2.setIcon("💰");
-
-        Customer.Fact alexandruFact3 = new Customer.Fact();
-        alexandruFact3.setName("has child");
-        alexandruFact3.setIcon("🧒");
 
         Customer.Fact alexandruFact4 = new Customer.Fact();
         alexandruFact4.setName("has vehicle");
@@ -388,7 +370,6 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
         alexandru.setFacts(Arrays.asList(
                 alexandruFact1,
                 alexandruFact2,
-                alexandruFact3,
                 alexandruFact4,
                 alexandruFact5
         ));
@@ -414,8 +395,8 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
 
 
         Customer.Fact stasFact5 = new Customer.Fact();
-        stasFact5.setName("maibank installed");
-        stasFact5.setIcon("📱");
+        stasFact5.setName("Not Alto client");
+        stasFact5.setIcon("💰");
 
         stas.setFacts(Arrays.asList(
                 stasFact1,
@@ -426,7 +407,7 @@ public class DefaultCustomersProfiles implements CustomersProfiles {
 
         CUSTOMERS.put(danTiger.getCreatioId(), danTiger);
         CUSTOMERS.put(lilianTiger.getCreatioId(), lilianTiger);
-        CUSTOMERS.put(viraliiTiger.getCreatioId(), viraliiTiger);
+        CUSTOMERS.put(vitaliiTiger.getCreatioId(), vitaliiTiger);
         CUSTOMERS.put(viktorRazhev.getCreatioId(), viktorRazhev);
         CUSTOMERS.put(alionaStratan.getCreatioId(), alionaStratan);
         CUSTOMERS.put(macar.getCreatioId(), macar);
