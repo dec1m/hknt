@@ -13,10 +13,9 @@ import java.util.List;
 @EqualsAndHashCode
 public class Customer {
 
-    private int creatioId;
+    private String creatioId;
     private int age;
     private String segment;
-    private String fullName;
     private List<Fact> facts;
 
     @Getter
